@@ -8,5 +8,5 @@ document.write("<table> <thead><th>NAME</th><th>AGE</th><th>GENDER</th></thead>"
                     document.write("<tr><td>ambika</td><td>34</td><td>f</td></tr>");
                     document.write("<tr><td>thangavelu</td><td>45</td><td>m</td>");
                 };
-            }
+            };
             document.write("</table>"); 
