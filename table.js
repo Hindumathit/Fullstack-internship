@@ -4,13 +4,11 @@ var gender=["f","f","f"];
 document.write("<table> <th>NAME</th><th>AGE</th><th>GENDER</th>");
 for(var i=0;i< 3;i++)
 {
-    document.write("<tr>");
     for(var j=0;j< names.length;j++)
     {
-        document.write("<td>${name(j)}</td>");
-        document.write("<td>${age(j)}</td>");
-        documnet.write("<td>${gender(j)}</td>")
+        document.write("<tr><td></td></tr>");
+        document.write("<tr><td>${age(j)}</td>>/tr>");
+        documnet.write("<tr><td>${gender(j)}</td></tr>");
     };
-    document.write("</tr>")
 };
 document.write("</table>");
