@@ -1,14 +1,10 @@
-var names=["Hindu","kavitha","Ambika"];
-var age=[20,17,38];
-var gender=["f","f","f"];
-document.write("<table> <th>NAME</th><th>AGE</th><th>GENDER</th>");
-for(var i=0;i< 3;i++)
-{
-    for(var j=0;j< names.length;j++)
+function newarray(){
+    const person= [["hindu","kavi","ambika"],["20","17","34"],["vellore","chennai","chittoor"]];
+    document.write("<table><th>name</th><th>age</th>");
+    for(var i=0;i<person.length;i++)
     {
-        document.write("<tr><td></td></tr>");
-        document.write("<tr><td>${age(j)}</td>>/tr>");
-        documnet.write("<tr><td>${gender(j)}</td></tr>");
-    };
-};
-document.write("</table>");
+        document.write("<tr><td>"+person[0]+"</td></tr>");
+    }
+    document.write("</table>");
+}
+newarray();
