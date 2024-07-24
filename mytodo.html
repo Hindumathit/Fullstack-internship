@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        .edit-mode {
+            display: none;
+        }
+        body{
+            background-color: aqua;
+        }
+        h1{
+            margin-left: 550px;
+        }
+        div{
+            background-color: blue;
+            padding:30px;
+        }
+        input{
+            width:1200px;
+        }
+        ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+    </style>
+</head>
+<body>
+    <h1>MY TO-DO LIST</h1>
+    <div>
+        <input type="text" id="new-task" placeholder="Add a new task">
+        <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="task-list"></ul>
+    <script  src="C:\Users\Hindu\Desktop\fullstackinternship\Fullstack-internship\mytodo.js">
+        
+    </script>
+</body>
+</html>
