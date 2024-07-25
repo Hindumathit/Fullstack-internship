@@ -46,15 +46,16 @@ ul li:nth-child(odd) {
 ul li:hover {
   background: #ddd;
 }
+.edit-mode {
+            display: none;
+        }
 
     </style>
 </head>
 <body>
-    <h1>MY TO-DO LIST</h1>
-    <div>
-        <input type="text" id="new-task" placeholder="Add a new task">
-        <button onclick="addTask()">Add</button>
-    </div>
+    <h1>MY TODO LIST</h1>
+    <input type="text" id="new-task" placeholder="New task">
+    <button onclick="addTask()">Add Task</button>
     <ul id="task-list"></ul>
     <script  src="C:\Users\Hindu\Desktop\fullstackinternship\Fullstack-internship\mytodo.js">
         
