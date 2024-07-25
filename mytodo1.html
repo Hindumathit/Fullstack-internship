@@ -1,80 +1,30 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <style>
-            body{
-                background-color:blue;
-            }
-            *{
-                box-sizing: border-box;
-            }
-
-            h1{
-                
-                margin-top:30px;
-                margin-left: 550px;
-            }
-            input{
-                background-color:aqua ;
-                color:black;
-                margin:20px;
-                padding:20px;
-                border:20px;
-                width:1200px;
-            }
-            .new{
-                padding:20px;
-                border:20px;
-                background-color: aqua;
-            }
-            ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  list-style-type: none;
-  background: #eee;
-  font-size: 18px;
-  transition: 0.2s;
-  
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
-
-/* Darker background-color on hover */
-ul li:hover {
-  background: #ddd;
-}
-
-    
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Hindu\Desktop\fullstackinternship\Fullstack-internship\mytodo1.css">
     </head>
     <body>
+        <script src=""></script>
         <h1>MY TODO LIST</h1>
         <input id="input" placeholder="Type here..."></input>
         <button onclick="update()" class="new">add</button>
         <ul id="list-container">
-           <li>Build an app<button onclick="removes(event)">delete</button></li>
+           <li>Build an 
+            <button onclick="removes(event)">delete</button>
+            <button onclick="change"(this)>Edit</button>
+        </li>
         </ul>
-        <script>
-            var ul=document.getElementById("list-container");
-            var input=document.getElementById("input");
-            function update(){
-                var listItem=document.createElement("li");
-                listItem.innerHTML=input.value +"<button onclick='removes(event)'>delete</button>";
-                ul.append(listItem);
+        <div id ="popup">
+            <input id="input2">
+            <button onclick="update2(event)">ok</button>
+
+        </div>
+        <style>
+            #popup{
+                display: none;
             }
-            function removes(event){
-                event.target.parentElement.remove();
-            }
+        </style>
+        <script src="C:\Users\Hindu\Desktop\fullstackinternship\Fullstack-internship\mytodolist1.js">
         
         </script>
     </body>
