@@ -52,3 +52,19 @@ function newElement() {
     }
   }
 }
+var currentItem=null;
+function change(event)
+{
+    currentItem=event.parentElement;
+    var popup=document.getElementById("edit");
+    popup.style.display="block";
+
+}
+function update2(event)
+{
+    var input2=document.getElementById("input2");
+     var inputvalue=input2.value;
+     currentItem.innerHTML=inputvalue+"<button onclick='change(this)'>edit</button>";
+     popup.style.display="none";
+     input.value='';
+}

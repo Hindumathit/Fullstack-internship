@@ -1,6 +1,7 @@
 body {
   margin: 0;
   min-width: 250px;
+
 }
 
 /* Include the padding and border in an element's total width and height */
@@ -118,3 +119,4 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
