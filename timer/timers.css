@@ -1,0 +1,23 @@
+body { 
+    background-color: aqua; 
+    background-image: url(https://wallpapercave.com/wp/AYQhetv.jpg);
+background-size: cover;}
+    #timer { font-size: 48px; margin-bottom: 20px;margin-top: 40px;margin-left:500px; }
+    #start{
+       margin-left:350px; width:150px;height:50px;background-color:yellow;
+    }
+    #stop{
+        width:150px;height:50px;background-color:yellow;
+    }
+    
+    #reset{
+        width:150px;height:50px;background-color:yellow;
+    }
+    h1{
+        
+        color:black;
+        margin-left:530px;
+        margin-top:150px;
+        margin-bottom: 10px;
+    }
+    
